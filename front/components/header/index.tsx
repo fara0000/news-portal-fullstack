@@ -27,7 +27,7 @@ export const Header: FC = () => {
                    <SearchIcon />
                    <input placeholder='Search'/>
                </div>
-               <Button>
+               <Button className={styles.penButton} variant="contained">
                    <PenIcon />
                </Button>
             </div>
@@ -39,9 +39,9 @@ export const Header: FC = () => {
                     <NotificationIcon />
                 </IconButton>
                 <Avatar
-                    className={styles.avatar}
                     alt="Remy Sharp"
                     src="https://leonardo.osnova.io/5ffeac9a-a0e5-5be6-98af-659bfaabd2a6/-/scale_crop/108x108/-/format/webp/"
+                    className={styles.avatar}
                 />
                 <ArrowBottom />
             </div>

@@ -1,6 +1,8 @@
+import React from 'react';
 import Head from 'next/head'
 import { Post } from '../components/post'
 import { Header } from '../components/header';
+import { LeftMenu } from '../components/leftMenu';
 
 export default function Home() {
     return (
@@ -17,7 +19,14 @@ export default function Home() {
                 />
             </Head>
             <Header />
-            <Post />
+            <div>
+                <div>
+                    <LeftMenu />
+                </div>
+                <div>
+                    <Post />
+                </div>
+            </div>
         </div>
   )
 }
